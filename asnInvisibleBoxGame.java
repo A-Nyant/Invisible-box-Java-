@@ -47,6 +47,7 @@ public class asnInvisibleBoxGame extends WindowController
      new Text ("You get points for click on the boxes, however", 10, 60, canvas);
      new Text ("The game only ends when your mouse leaves", 10, 100, canvas);
      new Text ("this pop-up. Good Luck", 10, 120, canvas);
+     //This will produce the random position
      random [0] = new RandomIntGenerator (0, 235);
      random [1] = new RandomIntGenerator (0, 205);
      random [2] = new RandomIntGenerator (0, 135);
@@ -189,13 +190,10 @@ public class asnInvisibleBoxGame extends WindowController
       new Text ("You hit " + acutalHit, 20, 100, canvas);
       //This will display the score of the person
       new Text ("Your score: " + (score - lost), 20, 120, canvas);
-      //This will set the count to 0 for the next game
+      //This will set the count, acutalhits, score and lost points to 0 for the next game
       count = 0;
-      //This will set the amount to nothing for the next game
       acutalHit = "";
-      //This will set the score to 0 for the next game
       score = 0; 
-      //This will set the lost points to 0 for the next game
       lost = 0;
    }
    
